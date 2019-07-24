@@ -10,19 +10,19 @@ url: "https://xmjr.github.io"
 
 # Comment  // 评论
 comment:
-    disqus: leopard
+    disqus: xmjr
     # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
     # uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social  // 社交
 social:
-    weibo: 5366874726 
-    github: leopardpan
+    # weibo:  
+    github: xmjr
     # zhihu: panpanleopard
     # juejin: xxx
-    jianshu: 2ada30d8d0f7
+    # jianshu: 2ada30d8d0f7
     # twitter: 
-    mail: leopardpan@icloud.com
+    mail: xinlianglai@163.com
 
 
 # 百度统计 
