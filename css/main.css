@@ -86,7 +86,7 @@ p a {
 }
 
 a:hover {
-  color: #0000CD;
+  color: #222;
   -o-transition: .5s;
   -ms-transition: .5s;
   -moz-transition: .5s;
@@ -102,40 +102,33 @@ h5 {
   margin-top: 1.0em;
   margin-bottom: .5em;
   font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  font-weight: lighter;
-  color: #333333;
+  font-weight: 500;
+  color: #555;
   -webkit-font-smoothing: antialiased; }
 
 h1 {
   margin-top: 0;
   font-size: 2.0em;
+  font-weight: lighter;
+  text-align: center;
   line-height: 1.2em;
   letter-spacing: .05em; 
 }
 
 h2 {
-  font-size: 1.5em; 
+  font-size: 1.8em; 
   /*background:#B9D3EE;*/
   /*text-align: center;*/
 }
 
 h3 {
-  font-size: 1.2em; 
-  text-indent: 4px; 
-  border-radius: 4px; 
-  padding: 6px 15px;
-  margin-bottom: 20px;
-  margin-top: 5px;
-  background:#B9D3EE;
-  /*0px right, 5px botton, 5px fuzzy*/
-  box-shadow: 0px 5px 5px #9FB6CD;
-  border-left: 6px solid #1874CD; 
-  position:relative;
+  font-size: 1.5em; 
+
 }
 
 h4 {
   font-size: 1.2em; 
-  padding: 6px 15px;
+
 }
 
 h5 {
@@ -143,8 +136,8 @@ h5 {
 
 p {
   margin-bottom: 10px;
-  margin-top: 5px;
-  line-height: 1.7em; 
+  margin-top: 10px;
+  line-height: 2em; 
   padding-left: 0px;
 }
 
@@ -155,11 +148,9 @@ em {
   font-style: italic; }
 
 blockquote {
-  padding-top: 10px;
+  margin-left: 10px;
   padding-bottom: 1px;
   padding-left: 10px;
-  margin-left: 20px;
-
   font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-weight: lighter;
   font-size: 1em;
@@ -451,7 +442,8 @@ img::-moz-selection {
     padding: 60px 0; }
 
   .post-meta {
-    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
     color: #c7c7c7; 
   }
   .post-meta img {
@@ -1404,7 +1396,7 @@ nav a {
   padding: 0px;
   color: #999;
   font-weight: 700;
-  font-size: .8em;
+  font-size: .6em;
   text-shadow: none;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
