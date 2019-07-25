@@ -323,7 +323,9 @@ body {
 	        transition: all ease-in-out 0.4s;
 	opacity: 0;
 }
-.over .hid:nth-of-type(3) {
+
+
+.over .moblie {
 	background: rgba(0,0,0,0.5) url("../images/html/moblie.png") no-repeat top 190px center / 15%;
 }
 
