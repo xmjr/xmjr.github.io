@@ -1,7 +1,7 @@
 # Basic
 title: 赖新亮
 subtitle: 一名执着的前端工程师
-description: 欢迎来到我的博客
+description: 在Web前端里翱翔
 # 头像里面的标题
 avatarTitle: xmjr
 # 头像里面的描述
@@ -64,8 +64,8 @@ blog_button:
 nav:
     - {title: 所有文章, description: archive, url: '/archive'}   
     - {title: 标签, description: tags, url: '/tags'}      
-    - {title: 关于我, description: about, url: '/about'}  
-    - {title: 项目作品, description: projects, url: '/gfzsr'}    
+    - {title: 简历 , description: resume, url: '/resume'} 
+    - {title: 项目作品, description: projects, url: '/projects'}    
     
 
 # Pagination

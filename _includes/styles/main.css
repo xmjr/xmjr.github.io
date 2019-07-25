@@ -178,3 +178,13 @@ right: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
+/* resume */
+.resume {
+  width:768px;
+  height:100%;
+  font-size:16px;
+  margin: 0 auto;
+}
+
+

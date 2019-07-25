@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, textarea, button {
+  border: none;
+  font-size: 100%;
+  margin: 0;
+  padding: 0; }
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, input, select, textarea, button {
+  line-height: 1.6;
+  color: #333;
+  font-size: 12px;
+  font-family: "Microsoft YaHei",sans-serif;
+  outline: none;
+  -webkit-text-size-adjust: 100%; }
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #333; }
+
+section, article, aside, header, footer, nav, dialog, figure {
+  display: block; }
+
+figure {
+  margin: 0; }
+
+s {
+  display: inline-block;
+  vertical-align: middle; }
+
+ol, ul, li {
+  list-style-type: none; }
+
+a {
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: color .2s,border .2s, background .2s;
+  transition: color .2s,border .2s, background .2s; }
+
+a:hover {
+  /* color: #ff6307; */
+  text-decoration: none; }
+
+em {
+  font-style: normal; }
+
+div, a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  background-color: #f3f3f7; }
+
+/* section */
+.section {
+  position: relative;
+  margin-bottom: 0.32rem; }
+
+.section img {
+  display: block;
+  width: 100%; }
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+
+/* content */
+.content {
+  padding: 0.6rem 0.33rem;
+  background-color: #fff; }
+
+.content h2 {
+  margin-bottom: 0.42rem;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  color: #333; }
+  [data-dpr="2"] .content h2 {
+    font-size: 44px; }
+  [data-dpr="3"] .content h2 {
+    font-size: 66px; }
+
+.content h2 span {
+  font-size: 18px; }
+  [data-dpr="2"] .content h2 span {
+    font-size: 36px; }
+  [data-dpr="3"] .content h2 span {
+    font-size: 54px; }
+
+.content .details {
+  font-size: 14px;
+  text-align: justify; }
+  [data-dpr="2"] .content .details {
+    font-size: 28px; }
+  [data-dpr="3"] .content .details {
+    font-size: 42px; }
+
+.content .details span {
+  color: #f35733; }
+
+.content .funds {
+  margin-bottom: 0.2rem;
+  text-align: center; }
+
+.content .funds .tag span {
+  display: inline-block;
+  padding: 0.08rem 0.19rem;
+  font-size: 10px;
+  line-height: 1;
+  color: #f35733;
+  border: 1px solid #f35733;
+  border-radius: 0.07rem; }
+  [data-dpr="2"] .content .funds .tag span {
+    font-size: 20px; }
+  [data-dpr="3"] .content .funds .tag span {
+    font-size: 30px; }
+
+.content .funds .num {
+  margin-bottom: 0.43rem;
+  padding-top: 0.47rem;
+  font-size: 34px;
+  line-height: 1;
+  color: #f35733; }
+  [data-dpr="2"] .content .funds .num {
+    font-size: 68px; }
+  [data-dpr="3"] .content .funds .num {
+    font-size: 102px; }
+
+.content .funds .num i {
+  font-size: 12px;
+  font-weight: normal; }
+  [data-dpr="2"] .content .funds .num i {
+    font-size: 24px; }
+  [data-dpr="3"] .content .funds .num i {
+    font-size: 36px; }
+
+.content .funds .yield-time {
+  font-size: 12px;
+  letter-spacing: 0;
+  color: #999999; }
+  [data-dpr="2"] .content .funds .yield-time {
+    font-size: 24px; }
+  [data-dpr="3"] .content .funds .yield-time {
+    font-size: 36px; }
+
+.tips {
+  font-size: 10px;
+  text-align: left;
+  color: #999999; }
+  [data-dpr="2"] .tips {
+    font-size: 20px; }
+  [data-dpr="3"] .tips {
+    font-size: 30px; }
+
+/* table */
+.table {
+  padding: 0.6rem 0.33rem;
+  background-color: #fff; }
+
+.table caption {
+  margin-bottom: 0.33rem;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  color: #979797; }
+  [data-dpr="2"] .table caption {
+    font-size: 32px; }
+  [data-dpr="3"] .table caption {
+    font-size: 48px; }
+
+.table th {
+  padding: 0.2rem 0;
+  font-size: 10px;
+  text-align: center;
+  color: #4a4a4a;
+  background-color: #f1f1f1;
+  border: 1px solid #d0d0d0; }
+  [data-dpr="2"] .table th {
+    font-size: 20px; }
+  [data-dpr="3"] .table th {
+    font-size: 30px; }
+
+.table td {
+  padding: 0.2rem 0;
+  font-size: 10px;
+  text-align: center;
+  color: #4e4e4e;
+  border: 1px solid #d0d0d0;
+  background-color: #fff; }
+  [data-dpr="2"] .table td {
+    font-size: 20px; }
+  [data-dpr="3"] .table td {
+    font-size: 30px; }
+
+.table .tips {
+  padding-top: 0.33rem;
+  font-size: 10px;
+  text-align: left;
+  color: #999999; }
+  [data-dpr="2"] .table .tips {
+    font-size: 20px; }
+  [data-dpr="3"] .table .tips {
+    font-size: 30px; }
+
+/* footer */
+.footer {
+  max-height: 9999px;
+  padding: 0.32rem 0.32rem;
+  margin-bottom: 1.6rem; }
+
+.footer p {
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #999; }
+  [data-dpr="2"] .footer p {
+    font-size: 20px; }
+  [data-dpr="3"] .footer p {
+    font-size: 30px; }
+
+.footer em {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666; }
+  [data-dpr="2"] .footer em {
+    font-size: 24px; }
+  [data-dpr="3"] .footer em {
+    font-size: 36px; }
+
+/* 底部按钮 */
+.bottom-btn {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 100;
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8); }
+
+.bottom-btn a {
+  margin: 0 0.24rem;
+  display: inline-block;
+  width: 4.3rem;
+  height: 0.96rem;
+  font-size: 16px;
+  line-height: 0.96rem;
+  text-align: center;
+  color: #fff; }
+  [data-dpr="2"] .bottom-btn a {
+    font-size: 32px; }
+  [data-dpr="3"] .bottom-btn a {
+    font-size: 48px; }
+
+.bottom-btn a.buyfund-btn {
+  background-color: #ff6307; }
+
+.bottom-btn a.showfund-btn {
+  background-color: #ff9d34; }
+
+.bottom-btn a.buyfund-btn:active {
+  background: #CA492A; }
+
+.bottom-btn a.showfund-btn:active {
+  background: #d6842c; }
+
+/*# sourceMappingURL=gfxxjsljC.css.map */
