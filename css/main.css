@@ -1467,7 +1467,9 @@ nav a {
   font-size:16px;
   margin: 0 auto;
 }
-
+.resume {
+  position: relative;
+}
 .resume h2 {
   font-size:28px;
 }
@@ -1527,6 +1529,19 @@ nav a {
   margin:0 auto 16px;
 }
 
+.resume .moblie {
+  display: none;
+  position: absolute;
+  float: left;
+  margin-left: 300px;
+  margin-top: -20px;
+  width: 100px;
+  height: 100px;
+  background: url("../images/moblie.png") no-repeat center / cover;
+}
+.resume .moblie_h:hover~.moblie {
+  display: block;
+} 
 
 .resume .information {
   text-align:center;
