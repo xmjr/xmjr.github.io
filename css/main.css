@@ -1449,6 +1449,24 @@ nav a {
 }
 /*导航按钮-end*/
 
+/* 返回顶部 */
+.back-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  background: url(../images/bar_bg.png) no-repeat;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.back-top:hover {
+  background: url(../images/bar_h.png) no-repeat;
+}
+
+
 /* fotter补充 */
 .footer_1 {
     display: block;

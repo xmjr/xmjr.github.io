@@ -30,4 +30,23 @@ $(document).ready(function() {
     // 导航按钮被点击
     // this.style.backgroundColor = '#fff'; 设置颜色后会自动消失
   });  
+
+
+  var backTop = $(".back-top");
+
+  // 点击“返回顶部”，页面按一定速度向上移动，直到顶部；
+  backTop.on("click", function() {
+    $("html,body").animate({scrollTop:0},500)
+  })
+  // 当位于第一屏时，不显示“返回顶部”按钮；
+  $(window).on("scroll", function() {
+    if($(window).scrollTop() > 0) {
+      backTop.fadeIn();
+    } else {
+      backTop.fadeOut();
+    }
+  })
+  // 最开始时，不出现“返回顶部”按钮；
+  $(window).trigger("scroll");
+
 });
