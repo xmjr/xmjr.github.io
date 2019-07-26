@@ -46,6 +46,7 @@ d:/web/index.html的根目录是d:
 **例1：index.html与photo.jpg在同一目录下**
 
 > d:/web/index.html
+
 > d:/web/photo.jpg
 
 则代码可写为：
@@ -55,6 +56,7 @@ d:/web/index.html的根目录是d:
 **例2：index.html与photo.jpg所在的文件夹在同一目录中（常见情况）**
 
 > d:/web/index.html
+
 > d:/web/img/photo.jpg
 
 则代码可写为：
@@ -64,6 +66,7 @@ d:/web/index.html的根目录是d:
 **例3：index.html 与photo.jpg不在同一父目录中，父目录的父目录相同**
 
 > d:/web/xmjr/index.html
+
 > d:/web/img/photo.jpg
 
 则代码可写为：
