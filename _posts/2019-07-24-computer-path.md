@@ -34,6 +34,21 @@ d:/web/index.html的根目录是d:
 
 - **./ 代表当前文件所在目录**
 
+文件操作中的相对路径可省略 ./ ；
+
+    fs.readFile("data/a.txt", function(err, data) {
+        if(err) {
+            return console.log("读取失败")
+        }
+        console.log(data.toString())
+    })
+
+在模块加载中，相对路径中的 ./ 不能省略。
+
+    // ErrorCannot find module 'data/foo.js'
+    require('data/foo.js')
+    require('./data/foo.js')
+
 - **../ 代表当前目录的上一层目录（父目录）**
 
 

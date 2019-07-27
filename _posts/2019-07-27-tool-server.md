@@ -20,8 +20,9 @@ tag: 工具
 
 设置Chrome的快捷方式属性，在“目标”后面加上 --allow-file-access-from-files，注意前面有个空格，重新打开Chrome即可。
 
-如果上述步骤不行，找到chrome浏览器安装路径复制下来（我的是C:\Program Files (x86)\Google\Chrome\Application\chrome.exe），再打开cmd，直接输入命令：
-"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files
+如果上述步骤不行，找到chrome浏览器安装路径复制下来（我的是C:\Program Files (x86)\Google\Chrome\Application\chrome.exe），
+再打开cmd，直接输入命令：
+> "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files
 
 - Mac：
 
