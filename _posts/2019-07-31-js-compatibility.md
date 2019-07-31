@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: "原生js一些常见的兼容写法"
-date: 2019-07-27  
+date: 2019-07-31  
 description: "在本地实现服务器环境"
 tag: 工具
 ---
@@ -32,7 +32,7 @@ tag: 工具
 
 **举个事件委托的例子**
 
-    // html
+    // html部分
     <ul id = "ul1">
         <li>111</li>
         <li>222</li>
@@ -158,14 +158,17 @@ document.body是为了兼容chrome
 
 ### 7.获取pageX、pageY
 clientX、clientY：点击位置相对于当前body可视区域的x、y坐标；
-screenX、screenY：点击位置相对于电脑屏幕的x、y坐标
-pageX、pageY：对于整个页面（包括了被卷去的body部分）的x、y坐标
-offsetX、offsetY：相对于带有定位的父盒子的x、y坐标
+
+screenX、screenY：点击位置相对于电脑屏幕的x、y坐标；
+
+pageX、pageY：对于整个页面（包括了被卷去的body部分）的x、y坐标；
+
+offsetX、offsetY：相对于带有定位的父盒子的x、y坐标。
 
     function getPageXY(event) {
         let pageX ,pageY;
-        pageX = event.pageX || (event.clientX + (window.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft))
-        pageY = event.pageY || (event.clientY + (window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop))
+        pageX = event.pageX || (event.clientX + (window.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft));
+        pageY = event.pageY || (event.clientY + (window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop));
         return {pageX, pageY};
     }
 
@@ -185,6 +188,9 @@ offsetX、offsetY：相对于带有定位的父盒子的x、y坐标
 ### 参考资料
 
 [JS中一些常用的兼容写法](https://www.cnblogs.com/arguments/p/10319841.html) 
+
 [一些常见的原生js兼容写法](https://blog.csdn.net/qq_28506819/article/details/88549954) 
+
 [JavaScript 事件兼容性写法](https://www.cnblogs.com/wangweizhang/p/8328806.html) 
+
 [js的一些兼容性写法](https://blog.csdn.net/qq_42767631/article/details/84992507) 
