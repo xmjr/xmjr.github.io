@@ -3,7 +3,7 @@ layout: post
 title: "原生js一些常见的兼容写法"
 date: 2019-07-31  
 description: "在本地实现服务器环境"
-tag: 工具
+tag: JavaScript
 ---
 
 - [1.获取事件对象、事件源](#1%E8%8E%B7%E5%8F%96%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1%E4%BA%8B%E4%BB%B6%E6%BA%90)
