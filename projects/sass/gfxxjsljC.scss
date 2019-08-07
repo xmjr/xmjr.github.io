@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+@mixin font-dpr($font-size) {
+    font-size: $font-size;
+    
+    [data-dpr="2"] & {
+        font-size: $font-size * 2;
+    }
+    
+    [data-dpr="3"] & {
+        font-size: $font-size * 3;
+    }
+}
+
+/* reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, textarea, button {
+  border: none;
+  font-size: 100%;
+  margin: 0;
+  padding: 0; }
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, input, select, textarea, button {
+  line-height: 1.6;
+  color: #333;
+  font-size: 12px;
+  font-family: "Microsoft YaHei",sans-serif;
+  outline: none;
+  -webkit-text-size-adjust: 100%; }
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #333; }
+
+section, article, aside, header, footer, nav, dialog, figure {
+  display: block; }
+
+figure {
+  margin: 0; }
+
+s {
+  display: inline-block;
+  vertical-align: middle; }
+
+ol, ul, li {
+  list-style-type: none; }
+
+a {
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: color .2s,border .2s, background .2s;
+          transition: color .2s,border .2s, background .2s; }
+
+a:hover {
+  /* color: #ff6307; */
+  text-decoration: none; }
+
+em {
+  font-style: normal; }
+
+
+div, a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+
+body {
+	background-color: #f3f3f7;
+}
+
+/* section */
+.section {
+	position: relative;
+  margin-bottom: 0.32rem;
+}
+.section img {
+	display: block;
+	width: 100%;
+}
+
+
+/* banner */
+.banner {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/* content */
+.content {
+	padding: 0.6rem 0.33rem;
+	background-color: #fff;
+}
+
+.content h2 {
+  margin-bottom: 0.42rem;
+  @include font-dpr(22px);
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  color: #333;
+}
+
+.content h2 span {
+  @include font-dpr(18px);
+}
+
+.content .details {
+  @include font-dpr(14px); 
+  text-align: justify;
+}
+.content .details span {
+  color: #f35733;
+}
+
+.content .funds {
+  margin-bottom: 0.2rem;
+	text-align: center;
+}
+
+.content .funds .tag span {
+  display: inline-block;
+  padding: 0.08rem 0.19rem;
+  @include font-dpr(10px);
+  line-height: 1;
+  color: #f35733; 
+  border: 1px solid #f35733;
+  border-radius: 0.07rem;
+}
+
+.content .funds .num {
+  margin-bottom: 0.43rem;
+  padding-top: 0.47rem;
+  @include font-dpr(34px);
+  line-height: 1;
+  color: #f35733;
+}
+
+.content .funds .num i {
+  @include font-dpr(12px);
+  font-weight: normal; 
+}
+
+.content .funds .yield-time {
+  @include font-dpr(12px);
+  letter-spacing: 0; 
+  color: #999999;
+}
+
+.tips{
+  @include font-dpr(10px);
+  text-align: left;
+  color: #999999;
+}
+
+
+/* table */
+.table {
+	padding: 0.6rem 0.33rem;
+	background-color: #fff;
+}
+
+.table caption {
+	margin-bottom: 0.33rem;
+	@include font-dpr(16px);
+	line-height: 1;
+	text-align: center;
+	color: #979797;
+}
+.table th {
+  padding: 0.2rem 0;
+  @include font-dpr(10px);
+  text-align: center;
+  color: #4a4a4a;
+  background-color: #f1f1f1;
+  border: 1px solid #d0d0d0;
+}
+.table td {
+  padding: 0.2rem 0;
+  @include font-dpr(10px);
+  text-align: center;
+  color: #4e4e4e;
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+}
+.table .tips{
+  padding-top: 0.33rem;
+  @include font-dpr(10px);
+  text-align: left;
+  color: #999999;
+}
+
+/* footer */
+.footer {
+  max-height: 9999px; 
+  padding: 0.32rem 0.32rem;
+  margin-bottom: 1.6rem;
+}
+.footer p {
+  @include font-dpr(10px);
+  line-height: 1.6;
+  text-align: justify;
+  color: #999;
+}
+.footer em {
+  @include font-dpr(12px);
+  font-weight: normal;
+  color: #666;
+}
+
+
+/* 底部按钮 */
+ .bottom-btn {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 100;
+  width: 100%;
+  height: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+  background: rgba(255,255,255,.8);
+}
+
+.bottom-btn a {
+  margin: 0 0.24rem;
+  display: inline-block;
+  width: 4.3rem;
+  height: 0.96rem;
+  @include font-dpr(16px);
+  line-height: 0.96rem;
+  text-align: center;
+  color: #fff;
+}
+.bottom-btn a.buyfund-btn {
+  background-color: #ff6307;
+}
+.bottom-btn a.showfund-btn {
+  background-color: #ff9d34;
+}
+.bottom-btn a.buyfund-btn:active {
+  background: #CA492A;
+}
+.bottom-btn a.showfund-btn:active {
+  background: #d6842c;
+}
+
+

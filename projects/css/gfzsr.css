@@ -1,0 +1,422 @@
+/* 通用设置 */
+@charset "utf-8";
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,a,span,i,em,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+
+li {list-style: none;}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: all .1s ease-in-out;
+	        transition: all .1s ease-in-out;
+}
+a:hover {
+	text-decoration: none;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	min-width: 1000px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	line-height: 1;
+	color: #333;
+	background: url(../images/gfzsr/bg.png) no-repeat top center;
+	-webkit-background-size: auto 100%;
+	        background-size: auto 100%;
+}
+
+/* header */
+.header {
+	z-index: 999;
+	width: 100%;
+	height: 80px;
+	background: #fff;
+}
+
+.header .main {
+	margin: 0 auto;
+	width: 1000px;
+	overflow: hidden;
+}
+
+.header .logo {
+	display: inline-block;
+	float: left;
+	width: 172px;
+	height: 80px;
+	line-height: 80px;
+}
+.header .logo a {
+	display: inline-block;
+	width: 172px;
+	height: 44px;
+	vertical-align: middle;
+	text-indent: -9999px;
+	background: url(../images/gfzsr/logo.jpg) no-repeat left center;
+}
+
+.header .nav {
+	float: right;
+	line-height: 80px;
+	color: #a2a5a4;
+	list-style: none;
+}
+.header .nav li {
+	display: inline-block;
+}
+.header .nav a {
+	padding: 0px 15px;
+	font: bold 16px  "Microsoft YaHei";
+	color: #3e3e3e;
+	text-decoration: none;
+}
+.header .nav a:hover {
+	color: #ff6307;
+}
+
+/* banner */
+.banner {
+	width: 100%;
+	height: 500px;
+	background: url(../images/gfzsr/banner.png) no-repeat top center;
+}
+
+/* page-section */
+.page-section {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 0;
+
+}
+
+/* section1 */
+.section1 h3{
+	text-align: center;
+	padding-bottom: 24px;
+}
+.float-list {
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+.float-list li {
+	float: left;
+	width: 33.33%;
+	text-align: center;
+}
+.icon-list {
+	border-bottom: 1px dashed #cdcdcd;
+}
+.icon-list li p {
+	font-size: 28px;
+	color: #694544;
+	font-weight: bold;
+	margin-top: 15px;
+}
+.icon-list li span {
+	display: inline-block;
+	padding: 15px 0;
+	font-size: 20px;
+	color: #666;
+}
+
+.funds-list {
+	padding-top: 40px;
+}
+.fund-card {
+	position: relative;
+	margin:0 auto;
+	width: 290px;
+	height: 298px;
+	background: rgba(255, 255, 255, 1);
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+	-webkit-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, .3);
+	   -moz-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, .3);
+	        box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, .3);
+}
+.fund-card .tag {
+	position: absolute;
+	top: -11px;
+	left: 50%;
+	margin-left: -114px;
+	width: 228px;
+	height: 52px;
+	font-size: 20px;
+	line-height: 48px;
+	color: #fff;
+	background: -webkit-gradient(linear, left top, right top, from(#f33d35), to(#ff830b));
+	background:-webkit-linear-gradient(left, #f33d35, #ff830b);
+	background:-o-linear-gradient(left, #f33d35, #ff830b);
+	background:linear-gradient(90deg, #f33d35, #ff830b);
+	border-bottom-left-radius: 40px 26px;
+	border-bottom-right-radius: 40px 26px;
+}
+.fund-card .fund-name {
+	padding-top: 55px;
+	font-size: 26px;
+	text-align: center;
+	color: #694544;
+}
+.fund-card .fund-yield {
+	margin-bottom: 5px;
+	font-size: 42px;
+	color: #f23937;
+}
+.fund-card .fund-yield-time {
+	font-size: 16px;
+	color: #6f6f6f;
+}
+.fund-card .fund-yield-time:before,
+.fund-card .fund-yield-time:after {
+	content: '';
+	display: inline-block;
+	width: 24px;
+	height: 1px;
+	vertical-align: middle;
+	background: #c6c6c6;
+}
+.fund-card .fund-yield-time:before {
+	margin-right: 5px;
+}
+.fund-card .fund-yield-time:after {
+	margin-left: 5px;
+}
+.fund-card .fund-btn {
+	margin: 12px auto;
+	display: inline-block;
+	width: 220px;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	color: #fff;
+	background: #ff8600;
+	border-radius: 20px;
+}
+.fund-card .fund-btn:hover {
+	text-shadow: 0 3px 5px #aa6422;
+	background: #f33d35;
+}
+.fund-card .fund-tips {
+	font-size: 14px;
+	color: #999;
+}
+
+/* section2 */
+.section2 {
+	position: relative;
+	margin-top: 100px;
+	padding: 50px 0 82px;
+}
+.section2 .section-title {
+	position: absolute;
+	left: 50%;
+	top: -60px;
+	-webkit-transform: translateX(-50%); 
+	    -ms-transform: translateX(-50%); 
+	        transform: translateX(-50%);
+	text-align: center;
+}
+.section2 .desc {
+	position: relative;
+	margin: 0 auto;
+	width: 926px;
+	padding-top: 65px;
+	padding-bottom: 20px;
+	background: #fff;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.3);
+	   -moz-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.3);
+	        box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.3);
+}
+.section2 .desc .title {
+	text-align: center;
+	padding-bottom: 30px;
+}
+.section2 .desc .title h4 {
+	position: relative;
+	display: inline-block;
+	padding: 0 15px;
+	text-align: center;
+}
+.section2 .desc .title h4:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 55%;
+	height: 10px;
+	text-align: center;
+	background: #ffcfa1;
+	border-radius: 10px;
+
+}
+.section2 .desc .title h4 span {
+	position: relative;
+	font-size: 30px;
+	font-weight: bold;
+	color: #ee3935;
+}
+.funds-table {
+	position: relative;
+	margin-bottom: 26px;
+	padding: 70px 15px 0;
+}
+.funds-table .tag {
+	position: absolute;
+	left: -22px;
+	top: 0;
+	width: 164px;
+	height: 68px;
+	font-size: 28px;
+	line-height: 55px;
+	text-align: center;
+	color: #fff;
+	background: url(../images/gfzsr/gfpc_img_zhishuri_biaoqian.png) no-repeat;
+}
+.funds-table table td {
+	border: 1px solid #e9e9e9;
+}
+.funds-table table td a {
+	display: block;
+	padding: 20px 25px;
+	font-size: 16px;
+	color: #666;
+}
+.funds-table table td:hover a {
+	background-color: #fff4eb;
+}
+.funds-table table td span {
+	margin-left: 20px;
+}
+
+/* section3 */
+.section3 .wrap {
+	padding-bottom: 40px;
+	border-bottom: 1px dashed #cdcdcd;
+}
+.section3 img {
+	display: block;
+	margin: 0 auto;
+}
+.section3 .tips {
+	padding-top: 20px;
+	padding-left: 11px;
+	font-size: 14px;
+	color: #999;
+}
+
+
+/* footer */
+.footer {
+	margin-top: 30px;
+	padding-top:100px;
+	height: 120px;
+	text-align: center;
+	background: url(../images/gfzsr/gfpc_img_zhishuri_guagnfadibulogo.png) no-repeat  top center;
+}
+.footer p,
+.footer a {
+	line-height: 22px;
+	color: #ababab;
+}
+.footer a:hover {
+	color: #f67b29;
+}
+
+/* 右侧工具栏 */
+.right-bar {
+	position: fixed;
+	bottom: 60px;
+	z-index: 1000;
+	display: inline-block;
+	width: 40px;
+	right: 10px;
+}
+.right-bar a {
+	position: relative;
+	margin: 1px 0;
+	overflow: visible;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+}
+.right-bar a.a1 {
+	background: url(../images/gfzsr/bar_bg.gif) no-repeat 0 0;
+}
+.right-bar a.a1:hover {
+	background: url(../images/gfzsr/bar_h.png) no-repeat right 0;
+}
+.right-bar a.a1:hover span {
+	opacity: 1;
+	left: -68px;
+}
+.right-bar a.a2 {
+	background: url(../images/gfzsr/bar_bg.gif) no-repeat 0 -42px;
+}
+.right-bar a.a2:hover {
+	background: url(../images/gfzsr/bar_h.png) no-repeat right -42px;
+}
+.right-bar a.a2:hover img {
+	display: block;
+}
+.right-bar a.a2 img {
+	position: absolute;
+	left: -124px;
+	top: -42px;
+	z-index: 999;
+	display: none;
+}
+.right-bar a.a3 {
+	background: url(../images/gfzsr/bar_bg.gif) no-repeat 0 -84px;
+}
+.right-bar a.a3:hover {
+	background: url(../images/gfzsr/bar_h.png) no-repeat right -84px;
+}
+.right-bar a.a3:hover span {
+	opacity: 1;
+	left: -82px;
+}
+.right-bar a.a4 {
+	background: url(../images/gfzsr/bar_bg.gif) no-repeat 0 -126px;
+}
+.right-bar a.a4:hover {
+	background: url(../images/gfzsr/bar_h.png) no-repeat right -126px;
+}
+.right-bar a.a4:hover span {
+	opacity: 1;
+	left: -68px;
+}
+.right-bar a.bgi:hover span {
+	-webkit-transition: all 0.25s ease-in-out;
+	     -o-transition: all 0.25s ease-in-out;
+	        transition: all 0.25s ease-in-out;
+}
+.right-bar a.bgi span {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: -1;
+	padding: 0 8px;
+	font-size: 14px;
+	line-height: 40px;
+	white-space: nowrap;
+	color: #fff;
+	background-color: #ff6307;
+	background-repeat: no-repeat;
+	border-radius: 3px;
+}
+
+
+
+
