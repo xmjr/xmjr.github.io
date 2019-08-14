@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: "原生js一些常见的兼容写法"
-date: 2019-07-31  
+date: 2019-08-11  
 description: "在本地实现服务器环境"
 tag: JavaScript
 ---
